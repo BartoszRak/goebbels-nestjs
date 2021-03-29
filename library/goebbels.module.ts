@@ -7,7 +7,7 @@ import { GoebbelsService } from './goebbels.service'
 
 @Module({})
 export class GoebbelsModule {
-  static forRoot(config: DeepPartial<GoebbelsConfig>): DynamicModule {
+  static forRoot(config: DeepPartial<GoebbelsConfig> = {}): DynamicModule {
     return {
       module: GoebbelsModule,
       imports: [GoebbelsConfigModule.forRoot(config)],
