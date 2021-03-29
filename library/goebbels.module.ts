@@ -1,8 +1,9 @@
 import { GoebbelsConfig } from '@goebbels/core'
 import { DeepPartial } from '@goebbels/core/dist/utils'
 import { DynamicModule, Module } from '@nestjs/common'
-import { GoebbelsConfigModule } from './goebbels-config.module'
+import { GoebbelsConfigModule, GoebbelsConfigModuleOptionsAsync } from './goebbels-config.module'
 import { GoebbelsProvider } from './goebbels.provider'
+import { GoebbelsService } from './goebbels.service'
 
 @Module({})
 export class GoebbelsModule {
@@ -13,11 +14,18 @@ export class GoebbelsModule {
     }
   }
 
+  static forRootAsync(options: GoebbelsConfigModuleOptionsAsync): DynamicModule {
+    return {
+      module: GoebbelsModule,
+      imports: [GoebbelsConfigModule.forRootAsync(options)]
+    }
+  }
+
   static forFeature(): DynamicModule {
       return {
           module: GoebbelsModule,
-          providers: [GoebbelsProvider],
-          exports: [GoebbelsProvider]
+          providers: [GoebbelsProvider, GoebbelsService],
+          exports: [GoebbelsService]
       }
   }
 }

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when root module is initialized "when using forRoot() and attempting to use module that uses goebbels module at the low level" gives access to goebbels configuration 1`] = `
+Object {
+  "depth": 10,
+  "detection": Object {
+    "text": Array [
+      /\\.\\{10\\}/gim,
+    ],
+  },
+}
+`;
+
+exports[`when root module is initialized "when using forRoot() and attempting to use module that uses goebbels module at the low level" when calling a service in module that uses goebbels module returns a redacted data 1`] = `
+Array [
+  "James",
+  "123abc",
+  "1hjkl",
+]
+`;
+
+exports[`when root module is initialized "when using forRoot() and attempting to use module that uses goebbels module at the top level" gives access to goebbels configuration 1`] = `
+Object {
+  "depth": 10,
+  "detection": Object {
+    "text": Array [
+      /\\.\\{10\\}/gim,
+    ],
+  },
+}
+`;
+
+exports[`when root module is initialized "when using forRoot() and attempting to use module that uses goebbels module at the top level" when calling a service in module that uses goebbels module returns a redacted data 1`] = `
+Array [
+  "James",
+  "123abc",
+  "1hjkl",
+]
+`;
+
+exports[`when root module is initialized "when using forRootAsync() and module that uses goebbels module at the low level" gives access to goebbels configuration 1`] = `
+Object {
+  "depth": 13,
+  "detection": Object {
+    "text": Array [
+      /\\[0-9\\]\\{3\\}\\[a-z\\]\\{3\\}/,
+    ],
+  },
+}
+`;
+
+exports[`when root module is initialized "when using forRootAsync() and module that uses goebbels module at the low level" when calling a service in module that uses goebbels module returns a redacted data 1`] = `
+Array [
+  "James",
+  "**MASKED_DATA**",
+  "1hjkl",
+]
+`;
+
+exports[`when root module is initialized "when using forRootAsync() and module that uses goebbels module at the top level" gives access to goebbels configuration 1`] = `
+Object {
+  "depth": 13,
+  "detection": Object {
+    "text": Array [
+      /\\[0-9\\]\\{3\\}\\[a-z\\]\\{3\\}/,
+    ],
+  },
+}
+`;
+
+exports[`when root module is initialized "when using forRootAsync() and module that uses goebbels module at the top level" when calling a service in module that uses goebbels module returns a redacted data 1`] = `
+Array [
+  "James",
+  "**MASKED_DATA**",
+  "1hjkl",
+]
+`;
