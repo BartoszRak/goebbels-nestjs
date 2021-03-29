@@ -1,6 +1,6 @@
 {
   "name": "@goebbels/nestjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NestJS provider of censorship for your data!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
