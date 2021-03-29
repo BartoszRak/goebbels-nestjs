@@ -1,6 +1,6 @@
 {
-  "name": "@goebbels/core",
-  "version": "0.0.1",
+  "name": "@goebbels/nestjs",
+  "version": "0.0.2",
   "description": "NestJS provider of censorship for your data!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,6 +17,7 @@
   "private": false,
   "readme": "./README.md",
   "keywords": [
+    "nestjs",
     "redact",
     "redactor",
     "censorsip",
