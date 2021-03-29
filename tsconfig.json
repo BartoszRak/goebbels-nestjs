@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "strict": true,
+    "isolatedModules": false,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "removeComments": true,
+    "incremental": true,
+    "declaration": true
+  },
+  "include": ["./library"],
+}

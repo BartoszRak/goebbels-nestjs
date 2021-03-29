@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "isolatedModules": true,
+    "types": ["jest", "node"]
+  },
+  "include": ["**/*.spec.ts", "**/*.d.ts"],
+  "exclude": ["**/*.e2e-spec.ts"]
+}
