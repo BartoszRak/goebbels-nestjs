@@ -297,10 +297,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@goebbels/core@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@goebbels/core/-/core-0.0.2.tgz#2fc3c4812d8c765af8292ce524f4ab42bbe5c653"
-  integrity sha512-elouxIrOSpKQJuOfU3gcSKQuGRKR44fjaL54TmnDznX6WcXp1/GVZmOqUUXEHay8CKYhiY8bjxuIfU9IE1S5Sw==
+"@goebbels/core@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@goebbels/core/-/core-0.0.3.tgz#ffde20ecb4d1ebf783223fdaf805c7da3dc7d7ee"
+  integrity sha512-uEM/nP5d3v26oi++X5O6o4VRlOVaOBpJO5thj702dKomD66Z7dvKRE83Fec8kWeIPijhrwWDdpnVXHWCUFeFeA==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
